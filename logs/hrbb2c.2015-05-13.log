@@ -1,0 +1,647 @@
+2015-05-13 08:37:02.740 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 3156 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 08:37:02.742 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 08:37:02.767 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e8f902: startup date [Wed May 13 08:37:02 CST 2015]; root of context hierarchy
+2015-05-13 08:37:03.979 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 08:37:04.174 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:37:04.178 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 08:37:04.179 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 08:37:04.284 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 08:37:04.285 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1517 ms
+2015-05-13 08:37:04.737 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 08:37:04.739 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 08:37:04.804 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:37:04.861 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 08:37:04.878 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:37:05.095 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 08:37:05.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2015-05-13 08:37:05.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 08:37:05.151 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 08:37:05.151 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 08:37:05.253 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 08:37:05.283 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:37:05.284 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 08:37:05.285 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 08:37:05.286 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 2.83 seconds (JVM running for 4.347)
+2015-05-13 08:37:21.300 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 08:37:21.300 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 08:37:21.319 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2015-05-13 08:37:21.347 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 08:37:21.381 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 08:37:21.381 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513083721|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 08:37:21.381 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513083721|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 08:37:21.801 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler processing failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+java.io.FileNotFoundException: resource\hrb_merchant.jks (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.7.0_79]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[na:1.7.0_79]
+	at java.io.FileInputStream.<init>(FileInputStream.java:101) ~[na:1.7.0_79]
+	at com.hrb.payment.client.core.KeyProvider.getInstance(KeyProvider.java:64) ~[hrb-merchant-toolkit-1.0.jar:na]
+	at com.hrb.payment.client.SignatureService.<clinit>(SignatureService.java:48) ~[hrb-merchant-toolkit-1.0.jar:na]
+	at com.nnk.maven.test.handler.Handler.sign(Handler.java:36) ~[classes/:na]
+	at com.nnk.maven.test.controller.PayController.pay(PayController.java:65) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1721) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+2015-05-13 08:41:42.487 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 1140 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 08:41:42.489 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 08:41:42.513 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c78e9: startup date [Wed May 13 08:41:42 CST 2015]; root of context hierarchy
+2015-05-13 08:41:43.055 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 08:41:43.150 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:41:43.155 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 08:41:43.155 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 08:41:43.230 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 08:41:43.230 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 717 ms
+2015-05-13 08:41:43.566 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 08:41:43.570 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 08:41:43.609 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:41:43.616 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 08:41:43.623 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:42:02.869 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:42:02.870 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2015-05-13 08:42:02.941 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:42:02.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2015-05-13 08:42:02.942 [main] INFO  o.s.b.logging.ClasspathLoggingApplicationListener - Application failed to start with classpath: [file:/G:/workspace/20150504/test-sample/target/classes/, file:/E:/maven_repository/org/springframework/boot/spring-boot-starter-web/1.0.1.RELEASE/spring-boot-starter-web-1.0.1.RELEASE.jar, file:/E:/maven_repository/org/springframework/boot/spring-boot-starter/1.0.1.RELEASE/spring-boot-starter-1.0.1.RELEASE.jar, file:/E:/maven_repository/org/springframework/boot/spring-boot/1.0.1.RELEASE/spring-boot-1.0.1.RELEASE.jar, file:/E:/maven_repository/org/springframework/boot/spring-boot-autoconfigure/1.0.1.RELEASE/spring-boot-autoconfigure-1.0.1.RELEASE.jar, file:/E:/maven_repository/org/springframework/boot/spring-boot-starter-logging/1.0.1.RELEASE/spring-boot-starter-logging-1.0.1.RELEASE.jar, file:/E:/maven_repository/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.jar, file:/E:/maven_repository/org/slf4j/jul-to-slf4j/1.7.6/jul-to-slf4j-1.7.6.jar, file:/E:/maven_repository/org/slf4j/log4j-over-slf4j/1.7.6/log4j-over-slf4j-1.7.6.jar, file:/E:/maven_repository/org/yaml/snakeyaml/1.13/snakeyaml-1.13.jar, file:/E:/maven_repository/org/springframework/boot/spring-boot-starter-tomcat/1.0.1.RELEASE/spring-boot-starter-tomcat-1.0.1.RELEASE.jar, file:/E:/maven_repository/org/apache/tomcat/embed/tomcat-embed-logging-juli/7.0.52/tomcat-embed-logging-juli-7.0.52.jar, file:/E:/maven_repository/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.jar, file:/E:/maven_repository/com/fasterxml/jackson/core/jackson-annotations/2.3.0/jackson-annotations-2.3.0.jar, file:/E:/maven_repository/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.jar, file:/E:/maven_repository/org/springframework/spring-web/4.0.3.RELEASE/spring-web-4.0.3.RELEASE.jar, file:/E:/maven_repository/org/springframework/spring-aop/4.0.3.RELEASE/spring-aop-4.0.3.RELEASE.jar, file:/E:/maven_repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/E:/maven_repository/org/springframework/spring-beans/4.0.3.RELEASE/spring-beans-4.0.3.RELEASE.jar, file:/E:/maven_repository/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.jar, file:/E:/maven_repository/org/springframework/spring-core/4.0.3.RELEASE/spring-core-4.0.3.RELEASE.jar, file:/E:/maven_repository/org/springframework/spring-webmvc/4.0.3.RELEASE/spring-webmvc-4.0.3.RELEASE.jar, file:/E:/maven_repository/org/springframework/spring-expression/4.0.3.RELEASE/spring-expression-4.0.3.RELEASE.jar, file:/E:/maven_repository/org/apache/tomcat/embed/tomcat-embed-jasper/7.0.52/tomcat-embed-jasper-7.0.52.jar, file:/E:/maven_repository/org/apache/tomcat/embed/tomcat-embed-core/7.0.52/tomcat-embed-core-7.0.52.jar, file:/E:/maven_repository/org/apache/tomcat/embed/tomcat-embed-el/7.0.52/tomcat-embed-el-7.0.52.jar, file:/E:/maven_repository/org/eclipse/jdt/core/compiler/ecj/4.3.1/ecj-4.3.1.jar, file:/E:/maven_repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar, file:/E:/maven_repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar, file:/E:/maven_repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar, file:/E:/maven_repository/msgsrv/msgsrv/2.4/msgsrv-2.4.jar, file:/E:/maven_repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar, file:/E:/maven_repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar, file:/E:/maven_repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar, file:/E:/maven_repository/hrb-merchant-toolkit/hrb-merchant-toolkit/1.0/hrb-merchant-toolkit-1.0.jar, file:/E:/maven_repository/bcprov-jdk14-127/bcprov-jdk14-127/1.0/bcprov-jdk14-127-1.0.jar, file:/E:/maven_repository/jce/jce/1.0/jce-1.0.jar, file:/E:/maven_repository/jcert/jcert/1.0/jcert-1.0.jar, file:/E:/maven_repository/jnet/jnet/1.0/jnet-1.0.jar, file:/E:/maven_repository/jsse/jsse/1.0/jsse-1.0.jar]
+2015-05-13 08:42:02.943 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report enabled debug logging (start with --debug)
+
+
+2015-05-13 09:12:57.558 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 4376 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 09:12:57.560 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 09:12:57.584 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c78e9: startup date [Wed May 13 09:12:57 CST 2015]; root of context hierarchy
+2015-05-13 09:12:58.124 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 09:12:58.220 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 09:12:58.224 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 09:12:58.225 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 09:12:58.333 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 09:12:58.334 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 750 ms
+2015-05-13 09:12:58.674 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 09:12:58.675 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 09:12:58.715 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 09:12:58.722 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 09:12:58.729 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 09:12:58.861 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 09:12:58.905 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2015-05-13 09:12:58.905 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 09:12:58.915 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 09:12:58.916 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 09:12:59.000 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 09:12:59.022 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 09:12:59.023 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 09:12:59.024 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 09:12:59.025 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.599 seconds (JVM running for 1.937)
+2015-05-13 09:13:02.984 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 09:13:02.984 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 09:13:02.995 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2015-05-13 09:13:03.015 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 09:13:03.017 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 09:13:03.017 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513091303|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 09:13:03.017 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513091303|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 09:13:03.052 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler processing failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+java.io.FileNotFoundException: resource\hrb_merchant.jks (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.7.0_79]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[na:1.7.0_79]
+	at java.io.FileInputStream.<init>(FileInputStream.java:101) ~[na:1.7.0_79]
+	at com.hrb.payment.client.core.KeyProvider.getInstance(KeyProvider.java:64) ~[hrb-merchant-toolkit-1.0.jar:na]
+	at com.hrb.payment.client.SignatureService.<clinit>(SignatureService.java:48) ~[hrb-merchant-toolkit-1.0.jar:na]
+	at com.nnk.maven.test.handler.Handler.sign(Handler.java:36) ~[classes/:na]
+	at com.nnk.maven.test.controller.PayController.pay(PayController.java:65) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1721) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+2015-05-13 12:35:47.295 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 5732 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 12:35:47.297 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 12:35:47.322 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c78e9: startup date [Wed May 13 12:35:47 CST 2015]; root of context hierarchy
+2015-05-13 12:35:47.908 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 12:35:48.017 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:35:48.023 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 12:35:48.023 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 12:35:48.106 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 12:35:48.107 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 785 ms
+2015-05-13 12:35:48.460 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 12:35:48.463 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 12:35:48.506 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:35:48.513 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 12:35:48.522 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:35:48.638 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 12:35:48.685 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2015-05-13 12:35:48.685 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 12:35:48.697 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 12:35:48.697 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 12:35:48.785 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 12:35:48.808 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:35:48.808 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 12:35:48.809 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 12:35:48.811 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.656 seconds (JVM running for 2.02)
+2015-05-13 12:35:55.380 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 12:35:55.381 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 12:35:55.400 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2015-05-13 12:35:55.429 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 12:35:55.431 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 12:35:55.432 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513123555|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 12:35:55.432 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513123555|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 12:35:55.467 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler processing failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+java.io.FileNotFoundException: resource\hrb_merchant.jks (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.7.0_79]
+	at java.io.FileInputStream.<init>(FileInputStream.java:146) ~[na:1.7.0_79]
+	at java.io.FileInputStream.<init>(FileInputStream.java:101) ~[na:1.7.0_79]
+	at com.hrb.payment.client.core.KeyProvider.getInstance(KeyProvider.java:64) ~[hrb-merchant-toolkit-1.0.jar:na]
+	at com.hrb.payment.client.SignatureService.<clinit>(SignatureService.java:48) ~[hrb-merchant-toolkit-1.0.jar:na]
+	at com.nnk.maven.test.handler.Handler.sign(Handler.java:36) ~[classes/:na]
+	at com.nnk.maven.test.controller.PayController.pay(PayController.java:65) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837) ~[spring-webmvc-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108) ~[spring-web-4.0.3.RELEASE.jar:4.0.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220) ~[tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1721) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679) [tomcat-embed-core-7.0.52.jar:7.0.52]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+2015-05-13 12:46:52.116 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 5208 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 12:46:52.118 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 12:46:52.143 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2629f1: startup date [Wed May 13 12:46:52 CST 2015]; root of context hierarchy
+2015-05-13 12:46:52.690 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 12:46:52.788 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:46:52.793 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 12:46:52.794 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 12:46:52.869 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 12:46:52.870 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 727 ms
+2015-05-13 12:46:53.215 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 12:46:53.216 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 12:46:53.257 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:46:53.264 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 12:46:53.272 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:46:53.405 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 12:46:53.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2015-05-13 12:46:53.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 12:46:53.461 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 12:46:53.462 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 12:46:53.549 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 12:46:53.571 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 12:46:53.571 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 12:46:53.572 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 12:46:53.574 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.594 seconds (JVM running for 1.952)
+2015-05-13 12:46:56.080 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 12:46:56.080 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 12:46:56.090 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2015-05-13 12:46:56.110 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 12:46:56.112 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 12:46:56.112 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513124656|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 12:46:56.112 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513124656|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 12:46:56.201 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 58c9e63a6b94b66e27e32b234d2ac31162798b756c7bfc494379221810d28beb5214dccba303781db016a77a9880cff45071c61ada892df771d190035d806b1095f9073f370b381800e256539724fb21fdc8c4d3bb30c8de7a65dae156d48030c78bec433cde3e819aba8b2c216b8a09798efbe492dc7ca101c0915d5b090362
+2015-05-13 12:46:56.201 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513124656|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='58c9e63a6b94b66e27e32b234d2ac31162798b756c7bfc494379221810d28beb5214dccba303781db016a77a9880cff45071c61ada892df771d190035d806b1095f9073f370b381800e256539724fb21fdc8c4d3bb30c8de7a65dae156d48030c78bec433cde3e819aba8b2c216b8a09798efbe492dc7ca101c0915d5b090362'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 16:31:39.872 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 8156 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 16:31:39.882 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 16:31:39.907 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c78e9: startup date [Wed May 13 16:31:39 CST 2015]; root of context hierarchy
+2015-05-13 16:31:40.465 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 16:31:40.559 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:31:40.563 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 16:31:40.563 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 16:31:40.640 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 16:31:40.640 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 733 ms
+2015-05-13 16:31:40.974 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 16:31:40.975 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 16:31:41.019 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:31:41.028 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:31:41.038 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:31:41.182 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:31:41.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 16:31:41.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 16:31:41.237 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:31:41.237 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:31:41.315 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 16:31:41.342 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:31:41.343 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:31:41.346 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 16:31:41.347 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.61 seconds (JVM running for 2.042)
+2015-05-13 16:31:45.522 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 16:31:45.522 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 16:31:45.540 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2015-05-13 16:31:45.559 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 16:31:45.560 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 16:31:45.561 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513163145|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:31:45.561 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513163145|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:31:45.603 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 415bb76e2a5b70ea03920b7967b2b9c2d43f23a15cf5f537e16ada5af819108c13964b0657338c454a0ac370be5116c97544fd10c7497b7c701083bcf760f3bc24bc400b341439407c6be404585da10987689c6ab90da1661694b104a056acbf22b0296e22656dbc097c6a01f279a65fd59018d1aa1567e450e69b853be30d26
+2015-05-13 16:31:45.603 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513163145|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='415bb76e2a5b70ea03920b7967b2b9c2d43f23a15cf5f537e16ada5af819108c13964b0657338c454a0ac370be5116c97544fd10c7497b7c701083bcf760f3bc24bc400b341439407c6be404585da10987689c6ab90da1661694b104a056acbf22b0296e22656dbc097c6a01f279a65fd59018d1aa1567e450e69b853be30d26'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 16:45:41.839 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 4020 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 16:45:41.841 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 16:45:41.866 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c78e9: startup date [Wed May 13 16:45:41 CST 2015]; root of context hierarchy
+2015-05-13 16:45:42.428 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 16:45:42.521 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:45:42.526 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 16:45:42.526 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 16:45:42.602 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 16:45:42.602 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 736 ms
+2015-05-13 16:45:42.942 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 16:45:42.944 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 16:45:42.984 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:45:42.998 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:45:43.007 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:45:43.140 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:45:43.187 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 16:45:43.187 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 16:45:43.198 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:45:43.198 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:45:43.280 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 16:45:43.307 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:45:43.309 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:45:43.311 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 16:45:43.312 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.609 seconds (JVM running for 1.937)
+2015-05-13 16:45:45.108 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 16:45:45.108 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 16:45:45.128 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2015-05-13 16:45:45.150 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 16:45:45.152 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 16:45:45.153 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164545|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:45:45.153 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164545|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:45:45.196 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 56e620005dbd9d3d91d3a638cb21bdd51c34516d55a5665a8927df547d59a7c09fd80aec828ff29ef8a60231d755b330b761cae1767ebab2580d82feaa88feb0f284969d825a8670d462bf727877ed55bd635fa4622aa8634f4282b853991e71639a612c2a28e16fe7fe7afb2dcab668bcbdb7c4d02c3ff083ed8a9b21447fd2
+2015-05-13 16:45:45.196 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164545|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='56e620005dbd9d3d91d3a638cb21bdd51c34516d55a5665a8927df547d59a7c09fd80aec828ff29ef8a60231d755b330b761cae1767ebab2580d82feaa88feb0f284969d825a8670d462bf727877ed55bd635fa4622aa8634f4282b853991e71639a612c2a28e16fe7fe7afb2dcab668bcbdb7c4d02c3ff083ed8a9b21447fd2'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 16:46:12.730 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 6568 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 16:46:12.732 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 16:46:12.757 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@18baf24: startup date [Wed May 13 16:46:12 CST 2015]; root of context hierarchy
+2015-05-13 16:46:13.322 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 16:46:13.417 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:13.421 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 16:46:13.421 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 16:46:13.498 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 16:46:13.498 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 741 ms
+2015-05-13 16:46:13.839 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 16:46:13.840 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 16:46:13.881 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:13.890 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:46:13.898 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:14.072 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:46:14.120 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 16:46:14.120 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 16:46:14.130 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:46:14.130 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:46:14.214 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 16:46:14.236 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:14.237 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:46:14.240 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 16:46:14.241 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.645 seconds (JVM running for 2.076)
+2015-05-13 16:46:15.502 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 16:46:15.502 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 16:46:15.512 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2015-05-13 16:46:15.533 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 16:46:15.535 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 16:46:15.535 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164615|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:46:15.535 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164615|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:46:15.578 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 148b219b626e057a117e571f8958c08f23f921073ad2b6a8b9e545f64e64967692a4bca052f19a5a13fcbf8cbf80b796df3a537d5fdad2b5a02c284e1ecbf50dbb0be8930f06c86b4bbc2768a5ebd4971b6759a85087dce1bfb883ad0bccaae08f9a0143f3370939334db43b5871d1c53be1aa1cc82ce574684b248e10a334db
+2015-05-13 16:46:15.578 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164615|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='148b219b626e057a117e571f8958c08f23f921073ad2b6a8b9e545f64e64967692a4bca052f19a5a13fcbf8cbf80b796df3a537d5fdad2b5a02c284e1ecbf50dbb0be8930f06c86b4bbc2768a5ebd4971b6759a85087dce1bfb883ad0bccaae08f9a0143f3370939334db43b5871d1c53be1aa1cc82ce574684b248e10a334db'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 16:46:29.749 [http-nio-8080-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 16:46:29.750 [http-nio-8080-exec-2] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 16:46:29.751 [http-nio-8080-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164629|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:46:29.751 [http-nio-8080-exec-2] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164629|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:46:29.774 [http-nio-8080-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 5327ef85465c649baf003e2fdf6ae7a1e03e65b9810af2e0a5f5472c26d5990ce58d58b68debe71ce47ea1d5f98c38e5af0dd4ffa05d7607b606452d831a2d855b7049a1a1158832a5ff61581d8cccc44da254f6db2b245b8ea99d8e2e7f25c6fcff9254cbf64030b6fada32b1d92121e46b1e0921c4528d8fb1cfc4b53cbf55
+2015-05-13 16:46:29.774 [http-nio-8080-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164629|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='5327ef85465c649baf003e2fdf6ae7a1e03e65b9810af2e0a5f5472c26d5990ce58d58b68debe71ce47ea1d5f98c38e5af0dd4ffa05d7607b606452d831a2d855b7049a1a1158832a5ff61581d8cccc44da254f6db2b245b8ea99d8e2e7f25c6fcff9254cbf64030b6fada32b1d92121e46b1e0921c4528d8fb1cfc4b53cbf55'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 16:46:35.314 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 3156 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 16:46:35.316 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 16:46:35.341 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34206b: startup date [Wed May 13 16:46:35 CST 2015]; root of context hierarchy
+2015-05-13 16:46:35.921 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 16:46:36.016 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:36.020 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 16:46:36.020 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 16:46:36.097 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 16:46:36.097 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 756 ms
+2015-05-13 16:46:36.445 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 16:46:36.447 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 16:46:36.487 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:36.496 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:46:36.505 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:36.652 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:46:36.697 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 16:46:36.697 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 16:46:36.710 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:46:36.710 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 16:46:36.803 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 16:46:36.826 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 16:46:36.828 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 16:46:36.830 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 16:46:36.831 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.658 seconds (JVM running for 2.051)
+2015-05-13 16:46:49.754 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 16:46:49.755 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 16:46:49.776 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2015-05-13 16:46:49.798 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 16:46:49.800 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 16:46:49.801 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164649|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:46:49.801 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164649|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 16:46:49.851 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 8ddfa20cd5590f2f2af3e22ee4b071e1397e369828f4da23b2cc7a260db30227fded8a4cf36d7a0910a720800ebeec6f8d4fcdcaaf0782f2645f6894001e670da05f27d0ba2147e772bae7643836abe6f5fc5e699a358ae73580d71a7aebcd01eec2c93f9fdc092b993cfbfbd78d693a873100e8427aae0e0ce646d7ee922315
+2015-05-13 16:46:49.852 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513164649|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='8ddfa20cd5590f2f2af3e22ee4b071e1397e369828f4da23b2cc7a260db30227fded8a4cf36d7a0910a720800ebeec6f8d4fcdcaaf0782f2645f6894001e670da05f27d0ba2147e772bae7643836abe6f5fc5e699a358ae73580d71a7aebcd01eec2c93f9fdc092b993cfbfbd78d693a873100e8427aae0e0ce646d7ee922315'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 17:03:33.368 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 3200 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 17:03:33.370 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 17:03:33.395 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15dcdeb: startup date [Wed May 13 17:03:33 CST 2015]; root of context hierarchy
+2015-05-13 17:03:33.964 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 17:03:34.057 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:03:34.061 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 17:03:34.061 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 17:03:34.137 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 17:03:34.137 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 742 ms
+2015-05-13 17:03:34.479 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 17:03:34.482 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 17:03:34.522 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:03:34.532 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 17:03:34.541 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:03:34.648 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:03:34.694 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 17:03:34.694 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 17:03:34.705 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:03:34.705 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:03:34.791 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 17:03:34.814 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:03:34.815 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 17:03:34.818 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 17:03:34.819 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.586 seconds (JVM running for 1.955)
+2015-05-13 17:03:36.732 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 17:03:36.732 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 17:03:36.741 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2015-05-13 17:03:36.760 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 17:03:36.762 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 17:03:36.762 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513170336|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 17:03:36.763 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513170336|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 17:03:36.812 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 91c41dfaa8acd8f82914e438853d5f3918ad1cd67469d66060e8294eb6de2382e3add38c8fd3956bedb0e2701a0a61a554399a6c50c733f69cbd2ce76a44f4f05e9cfc54384628b1a4d0b6d0ea0aafc530a7e897cda446cc4a266fe9411a9c72714c519128890f90349378619f5c4954e7a1f28480fbe0991536392bf129830c
+2015-05-13 17:03:36.812 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513170336|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='91c41dfaa8acd8f82914e438853d5f3918ad1cd67469d66060e8294eb6de2382e3add38c8fd3956bedb0e2701a0a61a554399a6c50c733f69cbd2ce76a44f4f05e9cfc54384628b1a4d0b6d0ea0aafc530a7e897cda446cc4a266fe9411a9c72714c519128890f90349378619f5c4954e7a1f28480fbe0991536392bf129830c'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 17:13:14.558 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 2480 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 17:13:14.560 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 17:13:14.584 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15dcdeb: startup date [Wed May 13 17:13:14 CST 2015]; root of context hierarchy
+2015-05-13 17:13:15.158 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 17:13:15.253 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:13:15.258 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 17:13:15.258 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 17:13:15.337 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 17:13:15.337 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 753 ms
+2015-05-13 17:13:15.679 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 17:13:15.683 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 17:13:15.723 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:13:15.732 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 17:13:15.739 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:13:15.876 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:13:15.922 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 17:13:15.922 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 17:13:15.933 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:13:15.933 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:13:16.020 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 17:13:16.041 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:13:16.043 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 17:13:16.045 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 17:13:16.046 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.625 seconds (JVM running for 2.114)
+2015-05-13 17:13:24.001 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 17:13:24.001 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 17:13:24.011 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2015-05-13 17:13:24.031 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 17:13:24.032 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 17:13:24.033 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513171324|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 17:13:24.033 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513171324|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 17:13:24.075 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 3a57fdd0fd7f6a52e368d35586b3a76a5b71e344fc3e51e55a40991bb4e2896f1e2f1ad7856a826d46a275426f793acaab67c8038986bab0c903b6a7f7ebb9713fd51c2f73c7061425f6018298bf6534eea0cfca60dac51a01d40982c5509d115b43b69b50bb8fcb9a446b20c89d6ffe55187e16cc0ec7fb26b59515cba4962f
+2015-05-13 17:13:24.075 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513171324|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='3a57fdd0fd7f6a52e368d35586b3a76a5b71e344fc3e51e55a40991bb4e2896f1e2f1ad7856a826d46a275426f793acaab67c8038986bab0c903b6a7f7ebb9713fd51c2f73c7061425f6018298bf6534eea0cfca60dac51a01d40982c5509d115b43b69b50bb8fcb9a446b20c89d6ffe55187e16cc0ec7fb26b59515cba4962f'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 17:39:02.777 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 7580 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 17:39:02.779 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 17:39:02.804 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15dcdeb: startup date [Wed May 13 17:39:02 CST 2015]; root of context hierarchy
+2015-05-13 17:39:03.380 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 8080
+2015-05-13 17:39:03.481 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:39:03.486 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 17:39:03.486 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 17:39:03.562 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 17:39:03.562 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 758 ms
+2015-05-13 17:39:03.922 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 17:39:03.923 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 17:39:03.963 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:39:03.972 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 17:39:03.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:39:04.152 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:39:04.200 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 17:39:04.201 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 17:39:04.212 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:39:04.212 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 17:39:04.304 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 17:39:04.325 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2015-05-13 17:39:04.327 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 17:39:04.329 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080/http
+2015-05-13 17:39:04.330 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.69 seconds (JVM running for 2.199)
+2015-05-13 17:39:06.377 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 17:39:06.377 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 17:39:06.388 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2015-05-13 17:39:06.409 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 17:39:06.411 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 17:39:06.411 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513173906|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 17:39:06.411 [http-nio-8080-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513173906|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 17:39:06.460 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 77b4c6337ceb476772a4f03648977d5f0b8716d573e7d65fee9fd1be0aa23599dc9ea2c578ac676708a59a0b7db0e77eefed6cd8d89fd748924c4bbdc5469e11398cb48a6639c693a11d8fba6a844881cb2570bba5bc66932b06bb57bd19ab6a21a14a88db4f0231f9b431534d14961d487e4f001ef7b6d78bbf50d3bc229248
+2015-05-13 17:39:06.461 [http-nio-8080-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513173906|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='77b4c6337ceb476772a4f03648977d5f0b8716d573e7d65fee9fd1be0aa23599dc9ea2c578ac676708a59a0b7db0e77eefed6cd8d89fd748924c4bbdc5469e11398cb48a6639c693a11d8fba6a844881cb2570bba5bc66932b06bb57bd19ab6a21a14a88db4f0231f9b431534d14961d487e4f001ef7b6d78bbf50d3bc229248'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 18:30:01.190 [main] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 7688 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 18:30:01.214 [main] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 18:30:01.238 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@71601f: startup date [Wed May 13 18:30:01 CST 2015]; root of context hierarchy
+2015-05-13 18:30:01.807 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 9000
+2015-05-13 18:30:01.899 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+2015-05-13 18:30:01.904 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 18:30:01.904 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 18:30:01.985 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 18:30:01.985 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 747 ms
+2015-05-13 18:30:02.317 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 18:30:02.321 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 18:30:02.361 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2015-05-13 18:30:02.370 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 18:30:02.379 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9000"]
+2015-05-13 18:30:02.496 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 18:30:02.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 18:30:02.541 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 18:30:02.551 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 18:30:02.552 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 18:30:02.638 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 18:30:02.659 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2015-05-13 18:30:02.661 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 18:30:02.664 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000/http
+2015-05-13 18:30:02.665 [main] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.609 seconds (JVM running for 1.995)
+2015-05-13 18:30:02.718 [http-nio-9000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 18:30:02.718 [http-nio-9000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 18:30:02.728 [http-nio-9000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2015-05-13 18:30:02.747 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 18:30:02.749 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 18:30:02.749 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513183002|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 18:30:02.749 [http-nio-9000-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513183002|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 18:30:02.789 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 4c68285b04ddb8dab409f80630f4f816b0bb5ee95cc5c448b3862103e31b10973cee51f28f297bd52b114ebd20f05cfa8a361cc97f899e6ef554949c475f4c5efb3152d855c916618e7135bcfeab4259c18c6efc9fb3ab724510edd5a07c5a2da51561b9e9361910cf47d98687b39a836e7375011b7070cfca339d61e2af323d
+2015-05-13 18:30:02.789 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513183002|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='4c68285b04ddb8dab409f80630f4f816b0bb5ee95cc5c448b3862103e31b10973cee51f28f297bd52b114ebd20f05cfa8a361cc97f899e6ef554949c475f4c5efb3152d855c916618e7135bcfeab4259c18c6efc9fb3ab724510edd5a07c5a2da51561b9e9361910cf47d98687b39a836e7375011b7070cfca339d61e2af323d'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 18:30:15.300 [http-nio-9000-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 18:30:15.300 [http-nio-9000-exec-2] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/target/classes//msgclient.xml
+2015-05-13 18:30:15.301 [http-nio-9000-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513183015|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 18:30:15.301 [http-nio-9000-exec-2] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513183015|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 18:30:15.318 [http-nio-9000-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 6086c37468d317bed5334dd98bbdc3d80dfa54cd238df5147c168f9abc04d5aca54e2e226520d22b2c65f77ed5fb9f7d8a0d385ec47856fcb2ab5ef5564623b5788df770d6bcbab0b85852817b34b6a91098c1636eec6cb72b1957b861e1aa020d1aeab59e46f096439f918f491283431e28434ed5ea3c4c1ba693769ac596c7
+2015-05-13 18:30:15.319 [http-nio-9000-exec-2] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513183015|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='6086c37468d317bed5334dd98bbdc3d80dfa54cd238df5147c168f9abc04d5aca54e2e226520d22b2c65f77ed5fb9f7d8a0d385ec47856fcb2ab5ef5564623b5788df770d6bcbab0b85852817b34b6a91098c1636eec6cb72b1957b861e1aa020d1aeab59e46f096439f918f491283431e28434ed5ea3c4c1ba693769ac596c7'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 20:16:49.097 [com.nnk.maven.test.boot.Application.main()] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 7548 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 20:16:49.098 [com.nnk.maven.test.boot.Application.main()] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 20:16:49.115 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c9bbdb: startup date [Wed May 13 20:16:49 CST 2015]; root of context hierarchy
+2015-05-13 20:16:49.582 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 9000
+2015-05-13 20:16:49.667 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:16:49.672 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 20:16:49.672 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 20:16:49.729 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 20:16:49.729 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 614 ms
+2015-05-13 20:16:50.053 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 20:16:50.054 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 20:16:50.173 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:16:50.181 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 20:16:50.188 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:16:50.335 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 20:16:50.390 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 20:16:50.391 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 20:16:50.400 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 20:16:50.400 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 20:16:50.467 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 20:16:50.486 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:16:50.489 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 20:16:50.491 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000/http
+2015-05-13 20:16:50.492 [com.nnk.maven.test.boot.Application.main()] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.495 seconds (JVM running for 3.532)
+2015-05-13 20:17:03.822 [http-nio-9000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 20:17:03.822 [http-nio-9000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 20:17:03.830 [http-nio-9000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2015-05-13 20:17:03.848 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 20:17:03.850 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/src/main/resources//msgclient.xml
+2015-05-13 20:17:03.850 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201703|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:17:03.852 [http-nio-9000-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201703|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:17:03.892 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 77119b0b6b79caf3b646c08ac01d3ac649a315ac67f1e3fbef028aa3b9bc1a56cf10849fa79eaa8d31f5c4a4152a4cf02597561e45e16f579e8e5c156d403899d2586d93c5ef6ef9c319b0204d2e235935d54310f5aca5064f076c5c1956ab2cba5e6ec147f9c246393289ee808555c701dcc4ad998262aff294ec675f623cf0
+2015-05-13 20:17:03.895 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201703|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='77119b0b6b79caf3b646c08ac01d3ac649a315ac67f1e3fbef028aa3b9bc1a56cf10849fa79eaa8d31f5c4a4152a4cf02597561e45e16f579e8e5c156d403899d2586d93c5ef6ef9c319b0204d2e235935d54310f5aca5064f076c5c1956ab2cba5e6ec147f9c246393289ee808555c701dcc4ad998262aff294ec675f623cf0'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 20:18:03.511 [http-nio-9000-exec-7] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 20:18:03.512 [http-nio-9000-exec-7] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/src/main/resources//msgclient.xml
+2015-05-13 20:18:03.512 [http-nio-9000-exec-7] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201803|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:18:03.514 [http-nio-9000-exec-7] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201803|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:18:03.521 [http-nio-9000-exec-7] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 820f2b06009c04dbdd4b01120b3301fc603de5aec110d9647c097e3ee68fa563a9ed53d9a312c7d74eb95ce0d89f1a1d1665d18ec2f9ed879e73324c5ff0595883d49027cb0feca53418cba6ac1983925e0ef13ba4057b47f041359d2ae6344905da32c478ecbd873837fc1001ebe66eb19dbf8b687369656b69e1d0353996a7
+2015-05-13 20:18:03.523 [http-nio-9000-exec-7] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201803|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='820f2b06009c04dbdd4b01120b3301fc603de5aec110d9647c097e3ee68fa563a9ed53d9a312c7d74eb95ce0d89f1a1d1665d18ec2f9ed879e73324c5ff0595883d49027cb0feca53418cba6ac1983925e0ef13ba4057b47f041359d2ae6344905da32c478ecbd873837fc1001ebe66eb19dbf8b687369656b69e1d0353996a7'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 20:18:50.814 [http-nio-9000-exec-8] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 20:18:50.815 [http-nio-9000-exec-8] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/src/main/resources//msgclient.xml
+2015-05-13 20:18:50.815 [http-nio-9000-exec-8] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201850|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:18:50.817 [http-nio-9000-exec-8] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201850|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:18:50.824 [http-nio-9000-exec-8] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 50dde4e953f08e3ca05bcb26468756746f4d7439f39610210e999692bfd9ebaefb19dc5d30b5168456f5200b2af50e574ea0dabc45335126e5410ba6259bf30d5dcd1a5b6057b967ec854abbeb86c884c5ba9cf3dec5ac0a02faf320ee6335da4e9a7fd55fb9abe0d936e4ab27373b78912cfd03caaf15ead5b7d6a73f876c2f
+2015-05-13 20:18:50.827 [http-nio-9000-exec-8] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513201850|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='50dde4e953f08e3ca05bcb26468756746f4d7439f39610210e999692bfd9ebaefb19dc5d30b5168456f5200b2af50e574ea0dabc45335126e5410ba6259bf30d5dcd1a5b6057b967ec854abbeb86c884c5ba9cf3dec5ac0a02faf320ee6335da4e9a7fd55fb9abe0d936e4ab27373b78912cfd03caaf15ead5b7d6a73f876c2f'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>
+2015-05-13 20:19:22.970 [Thread-1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c9bbdb: startup date [Wed May 13 20:16:49 CST 2015]; root of context hierarchy
+2015-05-13 20:19:22.971 [Thread-1] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2015-05-13 20:20:43.181 [com.nnk.maven.test.boot.Application.main()] INFO  com.nnk.maven.test.boot.Application - Starting Application on YRGCGZSR9CQDDA3 with PID 8680 (G:\workspace\20150504\test-sample\target\classes started by Administrator)
+2015-05-13 20:20:43.183 [com.nnk.maven.test.boot.Application.main()] DEBUG com.nnk.maven.test.boot.Application - Running with Spring Boot v1.0.1.RELEASE, Spring v4.0.3.RELEASE
+2015-05-13 20:20:43.204 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@124c37a: startup date [Wed May 13 20:20:43 CST 2015]; root of context hierarchy
+2015-05-13 20:20:43.668 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainerFactory - Server initialized with port: 9000
+2015-05-13 20:20:43.824 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:20:43.829 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2015-05-13 20:20:43.829 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/7.0.52
+2015-05-13 20:20:43.886 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2015-05-13 20:20:43.886 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 682 ms
+2015-05-13 20:20:44.145 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-13 20:20:44.147 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-13 20:20:44.199 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:20:44.207 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 20:20:44.215 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:20:44.355 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 20:20:44.397 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hrbb2c/pay],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.PayController.pay(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2015-05-13 20:20:44.398 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{id}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.nnk.maven.test.controller.UserController.view(java.lang.Long)
+2015-05-13 20:20:44.406 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 20:20:44.407 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-13 20:20:44.469 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2015-05-13 20:20:44.493 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9000"]
+2015-05-13 20:20:44.495 [com.nnk.maven.test.boot.Application.main()] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2015-05-13 20:20:44.497 [com.nnk.maven.test.boot.Application.main()] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9000/http
+2015-05-13 20:20:44.498 [com.nnk.maven.test.boot.Application.main()] INFO  com.nnk.maven.test.boot.Application - Started Application in 1.419 seconds (JVM running for 3.538)
+2015-05-13 20:21:51.919 [http-nio-9000-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2015-05-13 20:21:51.919 [http-nio-9000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2015-05-13 20:21:51.927 [http-nio-9000-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2015-05-13 20:21:51.946 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 开始进入支付： 订单号 = 1,交易金额 = 2
+2015-05-13 20:21:51.947 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - /G:/workspace/20150504/test-sample/src/main/resources//msgclient.xml
+2015-05-13 20:21:51.948 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 订单签名数据原文 : TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513202151|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:21:51.950 [http-nio-9000-exec-1] INFO  com.nnk.maven.test.handler.Handler - 接收到的msgsrv内容TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513202151|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2=
+2015-05-13 20:21:51.989 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 签名返回数据 : 1c9276ab57d827e50c5c2a4500691d53dc6a941c4ad3742489b3931957eaed3bab087577f7aba12b4990dd6172061746cb40c6bcecb6a3ce4cc6f95a0e0d1d4c20fd046f08430f9c34fa76360f81d6ce0cb63b73c1e1a3b8bb41e95854b45c70ea44828a3ac9188b890a50fe9984c94d4620b6416dc4c799a10f5d380ef95063
+2015-05-13 20:21:51.992 [http-nio-9000-exec-1] DEBUG com.nnk.maven.test.controller.PayController - 发往银行的表单 : <form method='post' action='https://pbanktest.95559.com.cn/netpay/MerPayB2C' name='HEBForm'><input type='hidden' name='Plain' id='Plain' value='TranAbbr=NP09|OrderId=1|MerchantDateTime=20150513202151|TransAmount=2|MerchantUrl=http://112.95.172.89:81/interface/HebB2CPay/notify.php|MerchantId=400020150505143121|TermCode=|Remark1=|Remark2='><input type='hidden' name='Signature' id='Signature' value='1c9276ab57d827e50c5c2a4500691d53dc6a941c4ad3742489b3931957eaed3bab087577f7aba12b4990dd6172061746cb40c6bcecb6a3ce4cc6f95a0e0d1d4c20fd046f08430f9c34fa76360f81d6ce0cb63b73c1e1a3b8bb41e95854b45c70ea44828a3ac9188b890a50fe9984c94d4620b6416dc4c799a10f5d380ef95063'><input type='hidden' name='transName' id='transName' value='NP09'></form><script language='javascript'>document.forms[0].submit();</script>

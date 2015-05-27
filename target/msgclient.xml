@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='GBK'?>
+<server-conf>
+	<server-name>哈尔滨银行网上B2C支付接口客户端参数程序</server-name>
+	
+	<app-name>HebB2CClient</app-name>
+	<user>HebB2CUser</user>
+	<pwd>HebB2CPwddengzw</pwd>
+	<!-- <enc-pwd>lTZD2Q3Os9rnPlQz2q7qWA==</enc-pwd> -->
+	
+	<host>10.1.100.250</host>
+	<port>6004</port>
+	<link-time>3000</link-time>
+	<selector-timeout>1000</selector-timeout>
+	<pulse-time>600000</pulse-time>
+	
+</server-conf>
